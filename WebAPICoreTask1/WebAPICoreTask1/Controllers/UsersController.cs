@@ -69,6 +69,8 @@ namespace WebAPICoreTask1.Controllers
 
             var user = _db.Users.Where(p => p.Username == name).FirstOrDefault();
 
+
+
             if (user == null)
             {
 
@@ -100,6 +102,9 @@ namespace WebAPICoreTask1.Controllers
                 return NotFound($"user with ID: {id} not found");
 
             }
+
+            var orders = _db.Orders.Where(o => o.UserId == id).ToList();
+            _db.Orders.RemoveRange(orders);
 
             _db.Users.Remove(user);
             _db.SaveChanges();
