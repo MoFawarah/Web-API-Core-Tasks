@@ -73,6 +73,25 @@ namespace WebAPICoreTask1.Controllers
         }
 
 
+        [HttpGet("GetOrderByName/{name}")]
+        public IActionResult GetOrderByName(string name)
+        {
+
+            if (string.IsNullOrEmpty(name))
+            {
+                return BadRequest("Plz enter a valid name");
+            }
+
+            var order = _db.Orders.Where(o => o.User.Username == name).FirstOrDefault();
+
+            if (order == null)
+            {
+                return NotFound($"No orders found for {name}");
+            }
+
+            return Ok(order);
+        }
+
         [HttpDelete("DeleteOrderByID")]
 
         public ActionResult DeleteOrder(int id)
