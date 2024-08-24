@@ -1,4 +1,7 @@
-﻿namespace WebAPICoreTask1.Models;
+﻿using System;
+using System.Collections.Generic;
+
+namespace WebAPICoreTask1.Models;
 
 public partial class Category
 {
