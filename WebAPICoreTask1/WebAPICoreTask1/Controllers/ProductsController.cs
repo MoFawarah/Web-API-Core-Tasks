@@ -53,6 +53,27 @@ namespace WebAPICoreTask1.Controllers
 
         }
 
+        [HttpGet("GetProductsByCatID/{CategoryID}")]
+
+        public IActionResult GetProductsByCatID(int CategoryID)
+        {
+            if (CategoryID <= 0)
+            {
+                return BadRequest("ID should be greater than 0");
+
+            }
+
+            var products = _db.Products.Where(p => p.CategoryId == CategoryID).ToList();
+
+            if (products == null || !products.Any())
+            {
+                return NotFound("No products found");
+            }
+
+            return Ok(products);
+
+        }
+
 
         [HttpGet("GetProductByName")]
 

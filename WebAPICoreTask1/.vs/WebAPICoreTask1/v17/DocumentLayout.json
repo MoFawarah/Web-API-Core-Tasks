@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\controllers\\categoriescontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\controllers\\categoriescontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,16 +27,8 @@
       "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\controllers\\categoriescontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\controllers\\categoriescontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +70,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPICoreTask1\\Program.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Program.cs",
+              "RelativeToolTip": "WebAPICoreTask1\\Program.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAYwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T07:07:40.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "WebAPICoreTask1\\Controllers\\OrdersController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAA1wE8AAAArAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAQwE8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T18:29:46.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T18:29:46.037Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Controllers\\UsersController.cs",
@@ -91,31 +106,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "WebAPICoreTask1\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG4AAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAwDgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T12:35:33.527Z"
+              "WhenOpened": "2024-08-24T12:35:33.527Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "CategoriesController1.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\CategoriesController1.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Controllers\\CategoriesController1.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\CategoriesController1.cs",
               "RelativeToolTip": "WebAPICoreTask1\\Controllers\\CategoriesController1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAuwDgAAABHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-24T12:09:19.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Models\\Order.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Models\\Order.cs",
@@ -127,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Models\\Category.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Models\\Category.cs",
@@ -139,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "MyDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Models\\MyDbContext.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Models\\MyDbContext.cs",
@@ -151,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\appsettings.json",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\appsettings.json",
@@ -163,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Models\\Product.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Models\\Product.cs",
@@ -175,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ValuesController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\ValuesController.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Controllers\\ValuesController.cs",
