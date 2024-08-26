@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAPICoreTask1.DTOS;
 using WebAPICoreTask1.Models;
 
 namespace WebAPICoreTask1.Controllers
@@ -75,6 +76,74 @@ namespace WebAPICoreTask1.Controllers
             _db.SaveChanges();
 
             return Ok(cat);
+        }
+
+
+        [HttpPost]
+
+        public IActionResult CreateCategory([FromForm] CategoryRequestDTO category)
+        {
+
+            var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+
+            if (!Directory.Exists(uploadFolder))
+            {
+                Directory.CreateDirectory(uploadFolder);
+            }
+
+            var ImageFile = Path.Combine(uploadFolder, category.CategoryImage.FileName);
+
+            using (var stream = new FileStream(ImageFile, FileMode.Create))
+
+            {
+                category.CategoryImage.CopyToAsync(stream);
+            }
+
+            var newCategory = new Category
+            {
+                CategoryName = category.CategoryName,
+                CategoryImage = category.CategoryImage.FileName,
+            };
+
+            _db.Categories.Add(newCategory);
+            _db.SaveChanges();
+
+
+            return Ok();
+        }
+
+
+        [HttpPut("UpdatedCategory/{id}")]
+
+        public IActionResult UpdateCategory(int id, [FromForm] CategoryRequestDTO category)
+        {
+
+            var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+
+            if (!Directory.Exists(uploadFolder))
+            {
+                Directory.CreateDirectory(uploadFolder);
+            }
+
+            var ImageFile = Path.Combine(uploadFolder, category.CategoryImage.FileName);
+
+            using (var stream = new FileStream(ImageFile, FileMode.Create))
+
+            {
+                category.CategoryImage.CopyToAsync(stream);
+            }
+
+            var c = _db.Categories.FirstOrDefault(c => c.CategoryId == id);
+
+            c.CategoryName = category.CategoryName;
+            c.CategoryImage = category.CategoryImage.FileName;
+
+            _db.Categories.Update(c);
+            _db.SaveChanges();
+
+
+            return Ok();
+
         }
 
 

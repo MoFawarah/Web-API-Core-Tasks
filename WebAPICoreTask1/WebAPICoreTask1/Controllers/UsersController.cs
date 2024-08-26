@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAPICoreTask1.DTOS;
 using WebAPICoreTask1.Models;
 
 namespace WebAPICoreTask1.Controllers
@@ -112,6 +113,56 @@ namespace WebAPICoreTask1.Controllers
             return Ok("User Deleted");
 
         }
+
+
+
+
+
+        [HttpPost]
+
+        public IActionResult CreateUser([FromForm] UserRequestDTO user)
+        {
+
+
+
+            var newUser = new User
+            {
+                Username = user.Username,
+                Password = user.Password,
+                Email = user.Email,
+
+
+            };
+
+            _db.Users.Add(newUser);
+            _db.SaveChanges();
+
+
+            return Ok();
+        }
+
+
+        [HttpPut("UpdatedUser/{id}")]
+
+        public IActionResult UpdateProduct(int id, [FromForm] UserRequestDTO user)
+        {
+
+
+
+            var u = _db.Users.FirstOrDefault(u => u.UserId == id);
+
+            u.Username = user.Username;
+            u.Password = user.Password;
+            u.Email = user.Email;
+
+            _db.Users.Update(u);
+            _db.SaveChanges();
+
+
+            return Ok();
+
+        }
+
 
 
     }

@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAPICoreTask1.DTOS;
 using WebAPICoreTask1.Models;
+
+
 
 namespace WebAPICoreTask1.Controllers
 {
@@ -129,6 +132,110 @@ namespace WebAPICoreTask1.Controllers
             return Ok("Product Deleted");
 
         }
+
+
+        [HttpGet("SortingProductsdescendingly")]
+
+        public IActionResult SortingProducts()
+        {
+
+            var products = _db.Products.OrderByDescending(p => p.Price).ToList();
+
+            return Ok(products);
+        }
+
+
+        [HttpGet("SortingProductsAscendingly")]
+
+        public IActionResult SortingProductsAscendingly()
+        {
+
+            var products = _db.Products.OrderBy(p => p.Price).ToList();
+
+            return Ok(products);
+        }
+
+
+
+        [HttpPost]
+
+        public IActionResult CreateProduct([FromForm] ProductRequestDTO product)
+        {
+
+            var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+
+            if (!Directory.Exists(uploadFolder))
+            {
+                Directory.CreateDirectory(uploadFolder);
+            }
+
+            var ImageFile = Path.Combine(uploadFolder, product.ProductImage.FileName);
+
+            using (var stream = new FileStream(ImageFile, FileMode.Create))
+
+            {
+                product.ProductImage.CopyToAsync(stream);
+            }
+
+            var newProduct = new Product
+            {
+                ProductName = product.ProductName,
+                Description = product.Description,
+                Price = product.Price,
+                CategoryId = product.CategoryId,
+                ProductImage = product.ProductImage.FileName,
+
+
+            };
+
+            _db.Products.Add(newProduct);
+            _db.SaveChanges();
+
+
+            return Ok();
+        }
+
+
+        [HttpPut("UpdatedProduct/{id}")]
+
+        public IActionResult UpdateProduct(int id, [FromForm] ProductRequestDTO product)
+        {
+
+            var uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "Images");
+
+            if (!Directory.Exists(uploadFolder))
+            {
+                Directory.CreateDirectory(uploadFolder);
+            }
+
+            var ImageFile = Path.Combine(uploadFolder, product.ProductImage.FileName);
+
+            using (var stream = new FileStream(ImageFile, FileMode.Create))
+
+            {
+                product.ProductImage.CopyToAsync(stream);
+            }
+
+            var p = _db.Products.FirstOrDefault(p => p.ProductId == id);
+
+            p.ProductName = product.ProductName;
+            p.Description = product.Description;
+            p.Price = product.Price;
+            p.CategoryId = product.CategoryId;
+            p.ProductImage = product.ProductImage.FileName;
+
+            _db.Products.Update(p);
+            _db.SaveChanges();
+
+
+            return Ok();
+
+        }
+
+
+
+
+
 
     }
 }
