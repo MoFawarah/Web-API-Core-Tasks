@@ -16,7 +16,7 @@ async function getAllCategories() {
     <h5 class="card-title">${category.categoryName}</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     <a href="#" onclick="saveCategoryID(${category.categoryId})" class="btn btn-primary">Save ID</a>
-    <a href="#" onclick="saveCategoryImage('${category.categoryImage}')" class="btn btn-primary">Save Image</a>
+    <a href="#" onclick="AddCategory()" class="btn btn-primary">Add Category</a>
   </div>
   
 </div>
@@ -26,6 +26,9 @@ async function getAllCategories() {
     });
 }
 
+
+
+
 getAllCategories();
 
 function saveCategoryID(x) {
@@ -33,7 +36,6 @@ localStorage.setItem("categoryID", x);
 window.location.href = "../Products/products.html"
 }
 
-function saveCategoryImage(y) {
-    localStorage.setItem("categoryImage", y);
-    alert("Image saved successfully!");
+function AddCategory() {
+  window.location.href = "addCategory.html"
 }

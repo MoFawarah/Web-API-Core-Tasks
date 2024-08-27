@@ -5,7 +5,7 @@ let n = localStorage.getItem("categoryID");
 
 
 async function getProducts () {
-debugger
+
 if (n !== null) {
 var url = `https://localhost:44353/api/Products/GetProductsByCatID/${n}`;
 

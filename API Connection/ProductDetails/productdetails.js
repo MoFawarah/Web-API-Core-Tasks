@@ -18,7 +18,7 @@ async function ShowProductDetails() {
                 <p class="card-text">${product.description}</p>
                 <p class="card-text"><strong>Price:</strong> ${product.price}$</p>
                 <a href="#" onclick="saveCategoryID(${product.price})" class="btn btn-primary">Save ID</a>
-                <a href="#" onclick="saveCategoryImage('${product.productImage}')" class="btn btn-primary">Save Image</a>
+                <a href="#" onclick="gotoedit()" class="btn btn-primary">edit product</a>
             </div>
         </div>
         </div>
@@ -26,3 +26,6 @@ async function ShowProductDetails() {
 }
 
 ShowProductDetails();
+function gotoedit() {
+window.location.href = "../Products/editProduct.html";
+}

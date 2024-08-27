@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <h2>Edit a Product</h2>
+        <form id="userForm" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="username" class="form-label">username</label>
+                <input name="username" type="text" class="form-control" id="username" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="password" class="form-label">password</label>
+                <input name="password" type="password" class="form-control" id="password" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">email</label>
+                <input name="email" type="email" class="form-control" id="email" required>
+            </div>
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            let url = "https://localhost:44353/api/Users";
+            fetch (url, { 
+                method: 'POST',
+                body: formData
+            
+            })
+
+            alert ("Registration succesful");
+        });
+    </script>
+
+
+
+
+
+
+</body>
+</html>

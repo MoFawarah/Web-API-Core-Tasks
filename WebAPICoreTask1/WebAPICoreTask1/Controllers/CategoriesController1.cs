@@ -147,5 +147,33 @@ namespace WebAPICoreTask1.Controllers
         }
 
 
+
+
+
+
+        [HttpGet("Calculator")]
+        public string Calculations(string x)
+        {
+            string[] arr = x.Split(" ");
+            int num1 = Convert.ToInt32(arr[0]);
+            int num2 = Convert.ToInt32(arr[2]);
+
+            if (arr[1] == "-")
+                return (num1 - num2).ToString();
+
+            else if (arr[1] == "*")
+                return (num2 * num1).ToString();
+
+            else if (arr[1] == "/")
+                return (num1 / num2).ToString();
+
+            else if (arr[1] == "+")
+                return (num1 + num2).ToString();
+
+            else return ($"Invalid Operation: {arr[0]} {arr[1]} {arr[2]} is invalid.");
+
+
+        }
+
     }
 }
