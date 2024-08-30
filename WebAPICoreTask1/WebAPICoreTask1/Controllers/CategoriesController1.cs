@@ -175,5 +175,37 @@ namespace WebAPICoreTask1.Controllers
 
         }
 
+
+        [HttpGet("NumbersChecker30")]
+        public bool Chekcer(int num1, int num2)
+        {
+            if (num1 + num2 == 30 || num1 == 30 || num2 == 30)
+            {
+
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
+
+
+        [HttpGet("NumbersMutlipleChecker")]
+        public bool Chekcer(int num1)
+        {
+            if (num1 % 3 == 0 || num1 % 7 == 0)
+            {
+
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

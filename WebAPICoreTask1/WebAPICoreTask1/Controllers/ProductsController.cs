@@ -233,6 +233,27 @@ namespace WebAPICoreTask1.Controllers
         }
 
 
+        [HttpGet("GetProductsDTO")]
+        public IActionResult GetProductByDTO()
+        {
+            var allproducts = _db.Products.Select(p => new ProductResponseDTO
+            {
+                ProductName = p.ProductName,
+                Description = p.Description,
+                Price = p.Price,
+                ProductImage = p.ProductImage,
+
+                CategoryDTO = p.Category != null ? new CategoryResponseDTO
+                {
+                    CategoryId = p.Category.CategoryId,
+                    CategoryName = p.Category.CategoryName,
+                    CategoryImage = p.Category.CategoryImage,
+                } : null
+
+            }).ToList();
+            return Ok(allproducts);
+
+        }
 
 
 
