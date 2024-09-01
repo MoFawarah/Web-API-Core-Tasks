@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace WebAPICoreTask1.Models;
+﻿namespace WebAPICoreTask1.Models;
 
 public partial class User
 {
@@ -14,6 +11,10 @@ public partial class User
     public string? Email { get; set; }
 
     public string? UserImage { get; set; }
+
+    public byte[]? PasswordHash { get; set; }
+
+    public byte[]? PasswordSalt { get; set; }
 
     public virtual Cart? Cart { get; set; }
 

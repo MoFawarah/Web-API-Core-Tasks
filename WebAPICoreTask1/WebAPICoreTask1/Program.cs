@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 using WebAPICoreTask1.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -26,7 +27,11 @@ options.AddPolicy("Development", builder =>
 
 
 
-
+Log.Logger = new LoggerConfiguration() /// new
+.WriteTo.Console()
+.WriteTo.File("app.log", rollingInterval: RollingInterval.Day)
+.CreateLogger();
+builder.Host.UseSerilog();
 
 
 

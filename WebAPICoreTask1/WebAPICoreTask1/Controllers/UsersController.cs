@@ -114,11 +114,46 @@ namespace WebAPICoreTask1.Controllers
 
         }
 
+        [HttpPost("registerNew")]
+        public IActionResult RegisterNewUser([FromForm] UserRequestDTO userDTO)
+        {
+            byte[] passwordHash;
+            byte[] Salt;
+            PasswordHasher.CreatePasswordHash(userDTO.Password, out passwordHash, out Salt);
+
+            var user = new User
+            {
+                Email = userDTO.Email,
+                Username = userDTO.Username,
+                Password = userDTO.Password, //should be deleted
+                PasswordHash = passwordHash,
+                PasswordSalt = Salt,
+            };
+
+            _db.Users.Add(user);
+            _db.SaveChanges();
+
+            return Ok(user);
+        }
+
+        [HttpPost("LoginNew")]
+        public ActionResult Login([FromForm] LoginRequestDTO model)
+        {
+            var user = _db.Users.FirstOrDefault(x => x.Username == model.Username);
+
+
+            if (user == null || !PasswordHasher.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
+            {
+                return Unauthorized("Invalid username or password.");
+            }
+            // Generate a token or return a success response
+            return Ok(user);
+        }
 
 
 
 
-        [HttpPost]
+        [HttpPost("Register")]
 
         public IActionResult CreateUser([FromForm] UserRequestDTO user)
         {
@@ -139,6 +174,41 @@ namespace WebAPICoreTask1.Controllers
 
 
             return Ok();
+        }
+
+
+        [HttpPost("Login")]
+
+        public IActionResult ValidateLogin([FromForm] LoginRequestDTO loginRequest)
+        {
+
+
+
+            if (string.IsNullOrEmpty(loginRequest.Username) || string.IsNullOrEmpty(loginRequest.Password))
+            {
+                return BadRequest("Plz enter a username or password");
+            }
+
+            {
+                var user = _db.Users.FirstOrDefault(u => u.Username == loginRequest.Username);
+
+                if (user == null || user.Password != loginRequest.Password)
+                {
+                    return NotFound("Invalid username or password.");
+
+                }
+                else
+                {
+                    return Ok(user);
+                }
+
+
+
+
+
+            }
+
+
         }
 
 

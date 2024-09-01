@@ -10,11 +10,13 @@ namespace WebAPICoreTask1.Controllers
     {
 
         private readonly MyDbContext _db;
+        private readonly ILogger<CategoriesController1> _logger;
 
 
-        public CategoriesController1(MyDbContext db)
+        public CategoriesController1(MyDbContext db, ILogger<CategoriesController1> logger)
         {
             _db = db;
+            _logger = logger;
         }
 
         [Route("GettingAllCat")]
@@ -22,6 +24,7 @@ namespace WebAPICoreTask1.Controllers
         public IActionResult GetAllCat()
         {
             var allCat = _db.Categories.ToList();
+            _logger.LogInformation("I'm Mohammad");
 
 
             return Ok(allCat);
@@ -33,6 +36,7 @@ namespace WebAPICoreTask1.Controllers
         {
 
             var cat = _db.Categories.Where(c => c.CategoryId == id).FirstOrDefault();
+            _logger.LogInformation("I'm Mohammad ByID");
 
             return Ok(cat);
         }
@@ -45,6 +49,7 @@ namespace WebAPICoreTask1.Controllers
         {
 
             var cat = _db.Categories.Where(c => c.CategoryName == name).FirstOrDefault();
+
 
             return Ok(cat);
         }
@@ -64,6 +69,8 @@ namespace WebAPICoreTask1.Controllers
 
             // Retrieve all products associated with this category
             var products = _db.Products.Where(p => p.CategoryId == id).ToList();
+
+
 
             if (products.Any())
             {

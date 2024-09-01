@@ -1,0 +1,246 @@
+2024-08-31 10:40:09.159 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-31 10:40:09.171 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/index.html - null null
+2024-08-31 10:40:09.198 +03:00 [INF] Hosting environment: Development
+2024-08-31 10:40:09.199 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\Wep API CORE TASKS\Web-API-Core-Tasks\WebAPICoreTask1\WebAPICoreTask1
+2024-08-31 10:40:09.854 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/index.html - 200 null text/html;charset=utf-8 686.0096ms
+2024-08-31 10:40:09.857 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-31 10:40:09.860 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_vs/browserLink - null null
+2024-08-31 10:40:09.861 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 3.9095ms
+2024-08-31 10:40:09.902 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.8339ms
+2024-08-31 10:40:10.029 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - null null
+2024-08-31 10:40:10.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 101.1668ms
+2024-08-31 10:42:53.309 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CartItem/GetAllCartItems - null null
+2024-08-31 10:42:53.317 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1)'
+2024-08-31 10:42:53.330 +03:00 [INF] Route matched with {action = "GetCartItems", controller = "CartItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCartItems() on controller WebAPICoreTask1.Controllers.CartItemController (WebAPICoreTask1).
+2024-08-31 10:42:53.852 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[WebAPICoreTask1.DTOS.CartItemResponseDTO, WebAPICoreTask1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-31 10:42:54.279 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartItemID] AS [CartItemId], [c].[CartID] AS [CartId], [c].[ProductID] AS [ProductId], [c].[Quantity], [p].[ProductName], [p].[Description], [p].[Price], [p].[ProductImage]
+FROM [CartItems] AS [c]
+LEFT JOIN [Products] AS [p] ON [c].[ProductID] = [p].[ProductID]
+2024-08-31 10:42:54.305 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1) in 972.9319ms
+2024-08-31 10:42:54.305 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1)'
+2024-08-31 10:42:54.310 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CartItem/GetAllCartItems - 200 null application/json; charset=utf-8 1000.5242ms
+2024-08-31 10:44:18.832 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CartItem/GetAllCartItems - null null
+2024-08-31 10:44:18.833 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1)'
+2024-08-31 10:44:18.834 +03:00 [INF] Route matched with {action = "GetCartItems", controller = "CartItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCartItems() on controller WebAPICoreTask1.Controllers.CartItemController (WebAPICoreTask1).
+2024-08-31 10:44:18.844 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[WebAPICoreTask1.DTOS.CartItemResponseDTO, WebAPICoreTask1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-31 10:44:18.849 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartItemID] AS [CartItemId], [c].[CartID] AS [CartId], [c].[ProductID] AS [ProductId], [c].[Quantity], [p].[ProductName], [p].[Description], [p].[Price], [p].[ProductImage]
+FROM [CartItems] AS [c]
+LEFT JOIN [Products] AS [p] ON [c].[ProductID] = [p].[ProductID]
+2024-08-31 10:44:18.850 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1) in 16.2891ms
+2024-08-31 10:44:18.850 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1)'
+2024-08-31 10:44:18.851 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CartItem/GetAllCartItems - 200 null application/json; charset=utf-8 19.0779ms
+2024-08-31 10:44:23.412 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CartItem/GetAllCartItems - null null
+2024-08-31 10:44:23.413 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1)'
+2024-08-31 10:44:23.413 +03:00 [INF] Route matched with {action = "GetCartItems", controller = "CartItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult GetCartItems() on controller WebAPICoreTask1.Controllers.CartItemController (WebAPICoreTask1).
+2024-08-31 10:44:23.449 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[WebAPICoreTask1.DTOS.CartItemResponseDTO, WebAPICoreTask1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-31 10:44:23.451 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartItemID] AS [CartItemId], [c].[CartID] AS [CartId], [c].[ProductID] AS [ProductId], [c].[Quantity], [p].[ProductName], [p].[Description], [p].[Price], [p].[ProductImage]
+FROM [CartItems] AS [c]
+LEFT JOIN [Products] AS [p] ON [c].[ProductID] = [p].[ProductID]
+2024-08-31 10:44:23.452 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1) in 39.0261ms
+2024-08-31 10:44:23.452 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CartItemController.GetCartItems (WebAPICoreTask1)'
+2024-08-31 10:44:23.452 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CartItem/GetAllCartItems - 200 null application/json; charset=utf-8 40.1506ms
+2024-08-31 10:46:46.144 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44353/api/CartItem/CreateCartItem - application/json 52
+2024-08-31 10:46:46.147 +03:00 [INF] CORS policy execution successful.
+2024-08-31 10:46:46.147 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CartItemController.AddCart (WebAPICoreTask1)'
+2024-08-31 10:46:46.151 +03:00 [INF] Route matched with {action = "AddCart", controller = "CartItem"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult AddCart(WebAPICoreTask1.DTOS.CartItemRequestDTO) on controller WebAPICoreTask1.Controllers.CartItemController (WebAPICoreTask1).
+2024-08-31 10:46:46.270 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartItems] ([CartID], [ProductID], [Quantity])
+OUTPUT INSERTED.[CartItemID]
+VALUES (@p0, @p1, @p2);
+2024-08-31 10:46:46.291 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'WebAPICoreTask1.Models.MyDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cart". The conflict occurred in database "ECommerceWebsite", table "dbo.Carts", column 'CartID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:61196b07-ab6c-4c82-bdb1-6cf550ef9f9a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cart". The conflict occurred in database "ECommerceWebsite", table "dbo.Carts", column 'CartID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:61196b07-ab6c-4c82-bdb1-6cf550ef9f9a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2024-08-31 10:46:46.293 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CartItemController.AddCart (WebAPICoreTask1) in 142.4121ms
+2024-08-31 10:46:46.294 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CartItemController.AddCart (WebAPICoreTask1)'
+2024-08-31 10:46:46.295 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Cart". The conflict occurred in database "ECommerceWebsite", table "dbo.Carts", column 'CartID'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+ClientConnectionId:61196b07-ab6c-4c82-bdb1-6cf550ef9f9a
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.<>c.<SaveChanges>b__112_0(DbContext _, ValueTuple`2 t)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at WebAPICoreTask1.Controllers.CartItemController.AddCart(CartItemRequestDTO Request) in C:\Users\Orange\Desktop\Wep API CORE TASKS\Web-API-Core-Tasks\WebAPICoreTask1\WebAPICoreTask1\Controllers\CartItemController.cs:line 61
+   at lambda_method13(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-31 10:46:46.312 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44353/api/CartItem/CreateCartItem - 500 null text/plain; charset=utf-8 168.1452ms
+2024-08-31 10:47:19.006 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CategoriesController1/GettingAllCat - null null
+2024-08-31 10:47:19.006 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetAllCat (WebAPICoreTask1)'
+2024-08-31 10:47:19.008 +03:00 [INF] Route matched with {action = "GetAllCat", controller = "CategoriesController1"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCat() on controller WebAPICoreTask1.Controllers.CategoriesController1 (WebAPICoreTask1).
+2024-08-31 10:47:19.029 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-08-31 10:47:19.037 +03:00 [INF] I'm Mohammad
+2024-08-31 10:47:19.037 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPICoreTask1.Models.Category, WebAPICoreTask1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-31 10:47:19.042 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CategoriesController1.GetAllCat (WebAPICoreTask1) in 34.0957ms
+2024-08-31 10:47:19.042 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetAllCat (WebAPICoreTask1)'
+2024-08-31 10:47:19.042 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CategoriesController1/GettingAllCat - 200 null application/json; charset=utf-8 36.3905ms
+2024-08-31 10:47:33.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/index.html - null null
+2024-08-31 10:47:33.419 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/index.html - 200 null text/html;charset=utf-8 4.1434ms
+2024-08-31 10:47:33.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_vs/browserLink - null null
+2024-08-31 10:47:33.427 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-31 10:47:33.428 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 0.6108ms
+2024-08-31 10:47:33.433 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.0217ms
+2024-08-31 10:47:33.539 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - null null
+2024-08-31 10:47:33.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6.3552ms
+2024-08-31 10:47:40.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CategoriesController1/GettingAllCat - null null
+2024-08-31 10:47:40.548 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetAllCat (WebAPICoreTask1)'
+2024-08-31 10:47:40.548 +03:00 [INF] Route matched with {action = "GetAllCat", controller = "CategoriesController1"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllCat() on controller WebAPICoreTask1.Controllers.CategoriesController1 (WebAPICoreTask1).
+2024-08-31 10:47:40.550 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+2024-08-31 10:47:40.551 +03:00 [INF] I'm Mohammad
+2024-08-31 10:47:40.551 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPICoreTask1.Models.Category, WebAPICoreTask1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-08-31 10:47:40.552 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CategoriesController1.GetAllCat (WebAPICoreTask1) in 3.0313ms
+2024-08-31 10:47:40.552 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetAllCat (WebAPICoreTask1)'
+2024-08-31 10:47:40.552 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CategoriesController1/GettingAllCat - 200 null application/json; charset=utf-8 5.6574ms
+2024-08-31 10:48:03.587 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/1 - null null
+2024-08-31 10:48:03.587 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:48:03.595 +03:00 [INF] Route matched with {action = "GetCatByID", controller = "CategoriesController1"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCatByID(System.Nullable`1[System.Int32]) on controller WebAPICoreTask1.Controllers.CategoriesController1 (WebAPICoreTask1).
+2024-08-31 10:48:03.611 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryID] = @__id_0
+2024-08-31 10:48:03.611 +03:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-08-31 10:48:03.611 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1) in 16.2953ms
+2024-08-31 10:48:03.611 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:48:03.612 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/1 - 204 null null 25.2194ms
+2024-08-31 10:50:38.214 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-08-31 10:50:38.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/index.html - null null
+2024-08-31 10:50:38.236 +03:00 [INF] Hosting environment: Development
+2024-08-31 10:50:38.237 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\Wep API CORE TASKS\Web-API-Core-Tasks\WebAPICoreTask1\WebAPICoreTask1
+2024-08-31 10:50:38.385 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/index.html - 200 null text/html;charset=utf-8 161.8074ms
+2024-08-31 10:50:38.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - null null
+2024-08-31 10:50:38.387 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_vs/browserLink - null null
+2024-08-31 10:50:38.391 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 3.3954ms
+2024-08-31 10:50:38.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.5477ms
+2024-08-31 10:50:38.594 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - null null
+2024-08-31 10:50:38.680 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.2853ms
+2024-08-31 10:50:47.868 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/4 - null null
+2024-08-31 10:50:47.875 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:50:47.885 +03:00 [INF] Route matched with {action = "GetCatByID", controller = "CategoriesController1"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCatByID(System.Nullable`1[System.Int32]) on controller WebAPICoreTask1.Controllers.CategoriesController1 (WebAPICoreTask1).
+2024-08-31 10:50:48.568 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryID] = @__id_0
+2024-08-31 10:50:48.606 +03:00 [INF] I'm Mohammad ByID
+2024-08-31 10:50:48.608 +03:00 [INF] Executing OkObjectResult, writing value of type 'WebAPICoreTask1.Models.Category'.
+2024-08-31 10:50:48.621 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1) in 734.2556ms
+2024-08-31 10:50:48.622 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:50:48.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/4 - 200 null application/json; charset=utf-8 760.9421ms
+2024-08-31 10:53:46.983 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/105 - null null
+2024-08-31 10:53:46.987 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:53:46.988 +03:00 [INF] Route matched with {action = "GetCatByID", controller = "CategoriesController1"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCatByID(System.Nullable`1[System.Int32]) on controller WebAPICoreTask1.Controllers.CategoriesController1 (WebAPICoreTask1).
+2024-08-31 10:53:47.000 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryID] = @__id_0
+2024-08-31 10:53:47.000 +03:00 [INF] I'm Mohammad ByID
+2024-08-31 10:53:47.001 +03:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-08-31 10:53:47.001 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1) in 13.1033ms
+2024-08-31 10:53:47.001 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:53:47.002 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/105 - 204 null null 18.4071ms
+2024-08-31 10:53:56.140 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/10000 - null null
+2024-08-31 10:53:56.141 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:53:56.141 +03:00 [INF] Route matched with {action = "GetCatByID", controller = "CategoriesController1"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCatByID(System.Nullable`1[System.Int32]) on controller WebAPICoreTask1.Controllers.CategoriesController1 (WebAPICoreTask1).
+2024-08-31 10:53:56.178 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CategoryID], [c].[CategoryImage], [c].[CategoryName]
+FROM [Categories] AS [c]
+WHERE [c].[CategoryID] = @__id_0
+2024-08-31 10:53:56.178 +03:00 [INF] I'm Mohammad ByID
+2024-08-31 10:53:56.178 +03:00 [INF] Executing OkObjectResult, writing value of type 'null'.
+2024-08-31 10:53:56.178 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1) in 37.129ms
+2024-08-31 10:53:56.178 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.CategoriesController1.GetCatByID (WebAPICoreTask1)'
+2024-08-31 10:53:56.178 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/CategoriesController1/GetCatByID/10000 - 204 null null 38.4788ms

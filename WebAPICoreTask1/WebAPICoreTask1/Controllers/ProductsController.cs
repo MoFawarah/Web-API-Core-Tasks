@@ -31,6 +31,26 @@ namespace WebAPICoreTask1.Controllers
         }
 
 
+        [HttpGet("GetAllProductsByName")]
+        public IActionResult GetAllProductsByName()
+        {
+
+
+            var allProducts = _db.Products.OrderBy(p => p.ProductName).Reverse().Take(5).Reverse().ToList();
+            var x = _db.Products.OrderBy(x => x.ProductName).ToList().TakeLast(5);
+
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    return Ok(allProducts[i]);
+
+
+            //}
+
+            return Ok(x);
+
+        }
+
+
         [HttpGet("GetOneProduct/{id:int}")]
 
         public IActionResult GetOneProduct(int id)
