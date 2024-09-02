@@ -1,0 +1,117 @@
+2024-09-02 11:36:18.484 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-02 11:36:18.498 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/index.html - null null
+2024-09-02 11:36:18.520 +03:00 [INF] Hosting environment: Development
+2024-09-02 11:36:18.521 +03:00 [INF] Content root path: C:\Users\Orange\Desktop\Wep API CORE TASKS\Web-API-Core-Tasks\WebAPICoreTask1\WebAPICoreTask1
+2024-09-02 11:36:19.317 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/index.html - 200 null text/html;charset=utf-8 820.8732ms
+2024-09-02 11:36:19.322 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-02 11:36:19.327 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_vs/browserLink - null null
+2024-09-02 11:36:19.330 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 7.4134ms
+2024-09-02 11:36:19.386 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.5428ms
+2024-09-02 11:36:19.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - null null
+2024-09-02 11:36:19.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.8302ms
+2024-09-02 11:37:45.163 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44353/api/Users/registerNew - multipart/form-data; boundary=----WebKitFormBoundaryNVV8qecaTLeHf5RZ 351
+2024-09-02 11:37:45.230 +03:00 [INF] CORS policy execution successful.
+2024-09-02 11:37:45.249 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.UsersController.RegisterNewUser (WebAPICoreTask1)'
+2024-09-02 11:37:45.302 +03:00 [INF] Route matched with {action = "RegisterNewUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegisterNewUser(WebAPICoreTask1.DTOS.UserRequestDTO) on controller WebAPICoreTask1.Controllers.UsersController (WebAPICoreTask1).
+2024-09-02 11:37:48.435 +03:00 [INF] Executed DbCommand (90ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 50), @p2='?' (Size = 8000) (DbType = Binary), @p3='?' (Size = 8000) (DbType = Binary), @p4='?' (Size = 4000), @p5='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password], [PasswordHash], [PasswordSalt], [UserImage], [Username])
+OUTPUT INSERTED.[UserID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2024-09-02 11:37:48.531 +03:00 [INF] Executing OkObjectResult, writing value of type 'WebAPICoreTask1.Models.User'.
+2024-09-02 11:37:48.591 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.UsersController.RegisterNewUser (WebAPICoreTask1) in 3280.871ms
+2024-09-02 11:37:48.592 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.UsersController.RegisterNewUser (WebAPICoreTask1)'
+2024-09-02 11:37:48.609 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44353/api/Users/registerNew - 200 null application/json; charset=utf-8 3446.6147ms
+2024-09-02 11:38:10.215 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44353/api/Users/LoginNew - multipart/form-data; boundary=----WebKitFormBoundary6E0TyLq6A4o44Jf4 246
+2024-09-02 11:38:10.220 +03:00 [INF] CORS policy execution successful.
+2024-09-02 11:38:10.221 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1)'
+2024-09-02 11:38:10.226 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(WebAPICoreTask1.DTOS.LoginRequestDTO) on controller WebAPICoreTask1.Controllers.UsersController (WebAPICoreTask1).
+2024-09-02 11:38:10.996 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__model_Username_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserImage], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__model_Username_0
+2024-09-02 11:38:11.016 +03:00 [INF] Executing OkObjectResult, writing value of type 'WebAPICoreTask1.Models.User'.
+2024-09-02 11:38:11.017 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1) in 790.5481ms
+2024-09-02 11:38:11.017 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1)'
+2024-09-02 11:38:11.018 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44353/api/Users/LoginNew - 200 null application/json; charset=utf-8 802.4815ms
+2024-09-02 12:11:39.680 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-02 12:11:39.685 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 4.9805ms
+2024-09-02 12:11:39.964 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_vs/browserLink - null null
+2024-09-02 12:11:40.151 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_vs/browserLink - 200 null text/javascript; charset=UTF-8 186.8172ms
+2024-09-02 12:11:42.122 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - null null
+2024-09-02 12:11:42.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 48.9837ms
+2024-09-02 13:24:38.083 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44353/api/Users/LoginNew - multipart/form-data; boundary=----WebKitFormBoundaryGmwjwfQxNlLu81Op 261
+2024-09-02 13:24:38.085 +03:00 [INF] CORS policy execution successful.
+2024-09-02 13:24:38.085 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1)'
+2024-09-02 13:24:38.086 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(WebAPICoreTask1.DTOS.LoginRequestDTO) on controller WebAPICoreTask1.Controllers.UsersController (WebAPICoreTask1).
+2024-09-02 13:24:38.114 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__model_Username_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserImage], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__model_Username_0
+2024-09-02 13:24:38.117 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-09-02 13:24:38.119 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1) in 33.6835ms
+2024-09-02 13:24:38.120 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1)'
+2024-09-02 13:24:38.120 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44353/api/Users/LoginNew - 401 null text/plain; charset=utf-8 36.6923ms
+2024-09-02 14:25:06.232 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44353/api/Users/LoginNew - multipart/form-data; boundary=----WebKitFormBoundaryWxAKmkgCl9faXSfN 261
+2024-09-02 14:25:06.233 +03:00 [INF] CORS policy execution successful.
+2024-09-02 14:25:06.234 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1)'
+2024-09-02 14:25:06.235 +03:00 [INF] Route matched with {action = "Login", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(WebAPICoreTask1.DTOS.LoginRequestDTO) on controller WebAPICoreTask1.Controllers.UsersController (WebAPICoreTask1).
+2024-09-02 14:25:06.322 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__model_Username_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserImage], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__model_Username_0
+2024-09-02 14:25:06.323 +03:00 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-09-02 14:25:06.324 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1) in 88.7201ms
+2024-09-02 14:25:06.324 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.UsersController.Login (WebAPICoreTask1)'
+2024-09-02 14:25:06.324 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44353/api/Users/LoginNew - 401 null text/plain; charset=utf-8 92.7497ms
+2024-09-02 16:09:55.734 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/index.html - null null
+2024-09-02 16:09:55.746 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/index.html - 200 null text/html;charset=utf-8 12.4072ms
+2024-09-02 16:09:55.753 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-02 16:09:55.754 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 0.7097ms
+2024-09-02 16:09:55.760 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/_vs/browserLink - null null
+2024-09-02 16:09:55.768 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.7863ms
+2024-09-02 16:09:55.840 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - null null
+2024-09-02 16:09:55.847 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.1181ms
+2024-09-02 16:10:06.325 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/2 - null null
+2024-09-02 16:10:06.326 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1)'
+2024-09-02 16:10:06.338 +03:00 [INF] Route matched with {action = "GetOneUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOneUser(Int32) on controller WebAPICoreTask1.Controllers.UsersController (WebAPICoreTask1).
+2024-09-02 16:10:06.370 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserImage], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @__p_0
+2024-09-02 16:10:06.371 +03:00 [INF] Executing OkObjectResult, writing value of type 'WebAPICoreTask1.Models.User'.
+2024-09-02 16:10:06.372 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1) in 33.9196ms
+2024-09-02 16:10:06.372 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1)'
+2024-09-02 16:10:06.372 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/2 - 200 null application/json; charset=utf-8 46.8076ms
+2024-09-02 16:14:33.358 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/[object HTMLInputElement] - null null
+2024-09-02 16:14:33.358 +03:00 [INF] CORS policy execution successful.
+2024-09-02 16:14:33.359 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/[object HTMLInputElement] - 404 null null 1.2703ms
+2024-09-02 16:14:33.359 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44353/api/Users/GetOneUser/%5Bobject%20HTMLInputElement%5D, Response status code: 404
+2024-09-02 16:14:48.977 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/[object HTMLInputElement] - null null
+2024-09-02 16:14:48.981 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/[object HTMLInputElement] - 404 null null 4.2155ms
+2024-09-02 16:14:48.981 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:44353/api/Users/GetOneUser/%5Bobject%20HTMLInputElement%5D, Response status code: 404
+2024-09-02 16:15:10.506 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/2 - null null
+2024-09-02 16:15:10.506 +03:00 [INF] CORS policy execution successful.
+2024-09-02 16:15:10.506 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1)'
+2024-09-02 16:15:10.507 +03:00 [INF] Route matched with {action = "GetOneUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOneUser(Int32) on controller WebAPICoreTask1.Controllers.UsersController (WebAPICoreTask1).
+2024-09-02 16:15:10.511 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserImage], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @__p_0
+2024-09-02 16:15:10.511 +03:00 [INF] Executing OkObjectResult, writing value of type 'WebAPICoreTask1.Models.User'.
+2024-09-02 16:15:10.511 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1) in 4.8132ms
+2024-09-02 16:15:10.512 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1)'
+2024-09-02 16:15:10.512 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/2 - 200 null application/json; charset=utf-8 6.0334ms
+2024-09-02 16:16:00.923 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/2 - null null
+2024-09-02 16:16:00.923 +03:00 [INF] CORS policy execution successful.
+2024-09-02 16:16:00.924 +03:00 [INF] Executing endpoint 'WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1)'
+2024-09-02 16:16:00.924 +03:00 [INF] Route matched with {action = "GetOneUser", controller = "Users"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetOneUser(Int32) on controller WebAPICoreTask1.Controllers.UsersController (WebAPICoreTask1).
+2024-09-02 16:16:00.986 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[UserID], [u].[Email], [u].[Password], [u].[PasswordHash], [u].[PasswordSalt], [u].[UserImage], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[UserID] = @__p_0
+2024-09-02 16:16:00.987 +03:00 [INF] Executing OkObjectResult, writing value of type 'WebAPICoreTask1.Models.User'.
+2024-09-02 16:16:00.988 +03:00 [INF] Executed action WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1) in 63.4364ms
+2024-09-02 16:16:00.988 +03:00 [INF] Executed endpoint 'WebAPICoreTask1.Controllers.UsersController.GetOneUser (WebAPICoreTask1)'
+2024-09-02 16:16:00.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44353/api/Users/GetOneUser/2 - 200 null application/json; charset=utf-8 65.4779ms

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\dtos\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\dtos\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|solutionrelative:webapicoretask1\\dtos\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C218DB1C-AD93-458F-9FCB-2E4C02A75FFC}|WebAPICoreTask1\\WebAPICoreTask1.csproj|c:\\users\\orange\\desktop\\wep api core tasks\\web-api-core-tasks\\webapicoretask1\\webapicoretask1\\dtos\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +46,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "LoginRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\DTOS\\LoginRequestDTO.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\DTOS\\LoginRequestDTO.cs",
@@ -67,12 +67,11 @@
               "RelativeToolTip": "WebAPICoreTask1\\Models\\User.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T09:11:24.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-01T09:11:24.651Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "UserRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\DTOS\\UserRequestDTO.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\DTOS\\UserRequestDTO.cs",
@@ -85,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "WebAPICoreTask1\\Controllers\\UsersController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Wep API CORE TASKS\\Web-API-Core-Tasks\\WebAPICoreTask1\\WebAPICoreTask1\\Controllers\\UsersController.cs",
               "RelativeToolTip": "WebAPICoreTask1\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAHkAAAAAAAAAAAAowJUAAAAaAAAA",
+              "ViewState": "AQIAAHkAAAAAAAAAAAAowIUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-01T08:23:56.28Z",
               "EditorCaption": ""
@@ -106,8 +105,7 @@
               "RelativeToolTip": "WebAPICoreTask1\\DTOS\\PasswordHasher.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T08:22:00.601Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-01T08:22:00.601Z"
             }
           ]
         },
