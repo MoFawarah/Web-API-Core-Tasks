@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using WebAPICoreTask1.DTOS;
 using WebAPICoreTask1.Models;
 
@@ -76,7 +77,11 @@ namespace WebAPICoreTask1.Controllers
 
         }
 
+
+        [Authorize]
         [HttpGet("GetProductsByCatID/{CategoryID}")]
+
+
 
         public IActionResult GetProductsByCatID(int CategoryID)
         {

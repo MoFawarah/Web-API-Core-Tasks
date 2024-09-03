@@ -2,6 +2,8 @@
 
 let n = Number(localStorage.getItem("productId"));
 async function ShowProductDetails() {
+
+  
     let url = `https://localhost:44353/api/Products/GetOneProduct/${n}`
     let request = await fetch(url);
 

@@ -88,5 +88,35 @@ namespace WebAPICoreTask1.Controllers
 
 
         }
+
+        [HttpGet("GetOddRepeated")]
+        public IActionResult OddNumberRepeated(int num1, int num2, int num3, int num4, int num5, int num6)
+        {
+            int[] number = { num1, num2, num3, num4, num5, num6 };
+            List<int> repeatedNumbers = new List<int>();
+
+            for (int i = 0; i < number.Length; i++)
+            {
+                int count = 0;
+
+                // Count occurrences of the current number
+                for (int j = 0; j < number.Length; j++)
+                {
+                    if (number[i] == number[j])
+                    {
+                        count++;
+                    }
+                }
+
+                // If the count is odd and not already added to repeatedNumbers, add it
+                if (count % 2 != 0 && !repeatedNumbers.Contains(number[i]))
+                {
+                    repeatedNumbers.Add(number[i]);
+                }
+            }
+
+            return Ok(repeatedNumbers);
+        }
+
     }
 }

@@ -1,10 +1,13 @@
 
+let n = Number(localStorage.getItem("categoryID"));
 
+debugger
+let token = localStorage.getItem("token");
+if (token == null ){
+  alert ("You have to login first");
 
-let n = localStorage.getItem("categoryID");
-
-
-async function getProducts () {
+}
+async function getProducts() {
 
 if (n !== null) {
 var url = `https://localhost:44353/api/Products/GetProductsByCatID/${n}`;
@@ -14,7 +17,15 @@ else {
 var url = "https://localhost:44353/api/Products/GetAllProducts";
 }
 
-let request = await fetch(url);
+let request = await fetch(url, {
+      //this also for token:
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${token}`
+        // 'Content-Type': 'application/json'  //this is also for token:  'Authorization': `Bearer ${token}`  //this is also for token:  'Authorization': `Bearer ${token}`  //this is also for token:  'Authorization': `Bearer ${token}`  //this is also for token:  'Authorization': `Bearer ${token}`  //this is also for token:  'Authorization': `Bearer ${token}`  //this is also
+       
+      }
+});
 
 let data = await request.json();
 
@@ -49,5 +60,3 @@ function SaveProductID(id) {
     localStorage.setItem("productId", id);
     window.location.href = "../ProductDetails/productdetails.html";
 }
-
-a

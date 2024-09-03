@@ -15,16 +15,22 @@ form.addEventListener('submit', async function (e) {
         method: "POST",
         body: formData
     });
+
+    // First step is to store the token in local storage only after login
+    //for second step, go to the products js
+
+    let result = await response.json()
+    localStorage.setItem("token", result.token);
   
     if (response.ok) {
         Swal.fire({
-            icon: 'success',
+            icon: 'success',    
             title: 'User exists!',
             showConfirmButton: true,
             timer: 1500
         });
         // Optional: Redirect after success
-        window.location.href = "../index.html";
+        // window.location.href = "../index.html";
     } else {
         Swal.fire({
             icon: 'error',

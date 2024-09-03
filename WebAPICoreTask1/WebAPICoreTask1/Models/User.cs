@@ -1,4 +1,7 @@
-﻿namespace WebAPICoreTask1.Models;
+﻿using System;
+using System.Collections.Generic;
+
+namespace WebAPICoreTask1.Models;
 
 public partial class User
 {
@@ -19,4 +22,6 @@ public partial class User
     public virtual Cart? Cart { get; set; }
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
+
+    public virtual ICollection<UserRole> UserRoles { get; set; } = new List<UserRole>();
 }

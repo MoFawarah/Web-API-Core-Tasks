@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using WebAPICoreTask1.DTOS;
 using WebAPICoreTask1.Models;
 
@@ -9,11 +10,13 @@ namespace WebAPICoreTask1.Controllers
     public class UsersController : ControllerBase
     {
         private readonly MyDbContext _db;
+        private readonly TokenGenerator _tokenGenerator;
 
 
-        public UsersController(MyDbContext db)
+        public UsersController(MyDbContext db, TokenGenerator tokenGenerator)
         {
             _db = db;
+            _tokenGenerator = tokenGenerator;
         }
 
 
@@ -133,6 +136,18 @@ namespace WebAPICoreTask1.Controllers
             _db.Users.Add(user);
             _db.SaveChanges();
 
+
+            var userRole = new UserRole
+            {
+                UserId = user.UserId,
+                Role = "Admin"
+            };
+
+            _db.UserRoles.Add(userRole);
+            _db.SaveChanges();
+
+
+
             return Ok(user);
         }
 
@@ -141,13 +156,20 @@ namespace WebAPICoreTask1.Controllers
         {
             var user = _db.Users.FirstOrDefault(x => x.Username == model.Username);
 
+            var roles = _db.UserRoles.Where(x => x.UserId == user.UserId).Select(ur => ur.Role).ToList();
+
 
             if (user == null || !PasswordHasher.VerifyPasswordHash(model.Password, user.PasswordHash, user.PasswordSalt))
             {
                 return Unauthorized("Invalid username or password.");
             }
+
+
             // Generate a token or return a success response
-            return Ok(user);
+
+            var token = _tokenGenerator.GenerateToken(user.Username, roles);
+
+            return Ok(new { Token = token });
         }
 
 
